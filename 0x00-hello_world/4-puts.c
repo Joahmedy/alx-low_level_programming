@@ -1,5 +1,4 @@
-#!/bin/bash
-#include <stdio.c>
+#include <stdio.h>
 
 /**
  * main - Entry point
