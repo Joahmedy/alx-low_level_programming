@@ -1,18 +1,12 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * printf_alphabet - utilizes on the _ptcher function to print
- *		thr alphabet a - z
- * Return: Always 0 (Success)
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void print_alphabet(void)
+int main(void)
 {
-	int i;
-
-	for (i = 97; i <= 122; i++)
-	{
-		_putchar(i);
-	}
-	_puchar('\n');
+	print_alphabet();
+	return (0);
 }
