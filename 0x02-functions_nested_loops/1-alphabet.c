@@ -1,14 +1,16 @@
-#include"main.h"
+#include <stdio.h>
 
 /**
  * printf_alphabet - utilizes on the _ptcher function to print
  * 		thr alphabet a - z
+ *
  */
 
-void print_alphabet(void)
-
-	int ch;
-
-	for (ch = 'a'; ch <= 'z'; ch ++)
-		_puchar(ch);
-	_puchar('\n');
+void print_alphabet(void) {
+    char letter = 'a';
+    while (letter <= 'z') {
+        _putchar(letter);
+        letter++;
+    }
+    _putchar('\n');
+}
