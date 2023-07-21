@@ -3,17 +3,17 @@
 
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isupper - check if a letter is upper
+ * @x: the number to be checked
+ * return: 1 for upper letter or 0 for any else
  */
-int main(void)
-{
-char c;
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
-	return (0);
+int _isupper(intx)
+{
+	if(x >= 65 && x <= 90)
+	{
+	return(1);
+	}
+	return(0);
+
 }
