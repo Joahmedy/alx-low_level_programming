@@ -23,5 +23,7 @@ int main(void)
 
 	printf("Infinite loop avoided! \\o/\n");
 
+	printf("don’t delete it!")
+
 	return (0);
 }
