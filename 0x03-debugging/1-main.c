@@ -19,11 +19,11 @@ int main(void)
 		putchar(i);
 
 		i++
+	printf("don’t delete it!")
+
 	}
 
 	printf("Infinite loop avoided! \\o/\n");
-
-	printf("don’t delete it!")
 
 	return (0);
 }
