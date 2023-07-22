@@ -2,7 +2,6 @@
 
 /**
 * main - causes an infinite loop
-* don’t delete it!
 * Return: 0
 */
 
@@ -13,17 +12,14 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-
-	while (i < 10)
-	{
-		putchar(i);
-
-		i++
-	printf("don’t delete it!")
-
-	}
-
+/**
+* while (i < 10)
+* {
+*
+*	putchar(i);
+* }
+*/
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
-}
+
