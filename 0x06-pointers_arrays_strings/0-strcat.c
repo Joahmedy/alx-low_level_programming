@@ -1,22 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <main.h>
+#include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
-int main(void)
 
+char *_strcat(char *dest, char *src)
 {
+	int i;
+	int j;
 
-  char a[] = "hello";
-char b[] = "world";
+	i = 0;
+	j = 0;
 
-strcat (a,b);
-    printf("%s",a);
-    return (0);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
-
