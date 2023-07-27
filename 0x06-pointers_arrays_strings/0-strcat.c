@@ -7,26 +7,14 @@
  * Return: return value of dest
  */
 
-char *_strcat(char *dest, char *src)
+int main()
 {
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-
-	dest[i] = '\0';
-	return (dest);
+	char a[] = "hello";
+	char b[] = "world";
+	char *ptr;
+	ptr = strcat(a,b);
+	printf("%s",ptr);
+	return(0);
 }
+
+
