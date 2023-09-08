@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - [entry point
+ * 'main' - [entry point
  *
  * didcription uding sizeof to ptint size of
  * return always 0
