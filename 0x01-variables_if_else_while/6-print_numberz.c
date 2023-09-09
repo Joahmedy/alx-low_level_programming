@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - Emtry point
- * Desceiption: numbers
- * Return: Always 0 (Success)
+ * Description: 'i am try leanr the languag C
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -11,7 +10,7 @@ int main(void)
 	int i;
 
 	for (i = 0 ; i < 10 ; i++)
-	printf("%d", i);
-	printf("\n");
+	putchar(i + '0');
+	putchar('\n');
 	return (0);
 }
