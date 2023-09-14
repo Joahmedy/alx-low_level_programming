@@ -1,12 +1,19 @@
 #include "main.h"
 
-/**
- * main - check the code
+/*
+ * print_alphabet - use the function _putchar to print alphabets
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	for (int a = 97; a <= 122 ; a++)
+	{
+		_putchar(a);
+	}
+
+	_putchar('\n');
+
+
 }
