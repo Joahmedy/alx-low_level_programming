@@ -6,22 +6,24 @@
  * Return: Always 0 (Success)
  */
 
+#include <stdio.h>
+
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = i + 1; j < 10; j++)
+		{
+			for (int k = j + 1; k < 10; k++)
+			{
+				putchar('0' + i);
+				putchar('0' + j);
+				putchar('0' + k);
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
 
-	for (i = 48 ; i < 58 ; i++)
-	for (j = 49 ; j < 58 ; j++)
-	for (k = 50 ; k < 58 ; k++)
-	if (k > j && j > i)
-	putchar(i);
-	putchar(j);
-	putchar(k);
-	if (i != 55 || j != 56)
-	putchar(',');
-	putchar(' ');
-	putchar('\n');
 	return (0);
 }
