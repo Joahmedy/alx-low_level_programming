@@ -2,23 +2,21 @@
 
 /**
  * main - Entry point
- * Description: The more brains you use, the less material you need
+ * Description: 'make an unbeatable combination for success'
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i;
-	int j;
-
-	for (i = 0 ; i <= 9 ; i++)
-	for (j = 0 ; j <= 9 ; j++)
-	if (i != j && i < j)
-	putchar(i + 48);
-	putchar(j + 48);
-	if (i + j != 17)
-	putchar(',');
-	putchar(' ');
-	putchar('\n');
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = i + 1; j < 10; j++)
+		{
+			putchar('0' + i);
+			putchar('0' + j);
+			putchar(',');
+			putchar(' ');
+		}
+	}
 	return (0);
 }
