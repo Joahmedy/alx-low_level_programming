@@ -23,5 +23,7 @@ int main(void)
 			putchar(' ');
 		}
 	}
+	putchar('\b');
+	putchar('\b');
 	return (0);
 }
