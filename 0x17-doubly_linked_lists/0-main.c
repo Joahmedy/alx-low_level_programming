@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always EXIT_SUCCESS.
  */
@@ -26,7 +26,7 @@ int main(void)
     head->prev = new;
     new->next = head;
     new->prev = NULL;
-    head = NULL;
+    head = new;
     n = print_dlistint(head);
     printf("-> %lu elements\n", n);
     free(new);
