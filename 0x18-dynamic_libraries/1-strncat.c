@@ -1,30 +1,20 @@
+#include<string.h>
+#include "main.h"
+#include<stddef.h>
 /**
- * _strncat - concatanates two strings
- *
- * @dest: destination string
- * @src: string to add to end of dest
- * @n: num of bytes to take from src
- *
- * Description: only takes n bytes from src
- *
- * Return: char pointer to dest
+ *_strncat - Appends two functions together
+ *@dest: destination of the file
+ *@src: Source
+ *@n: Max number of bytes
+ *Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int counter = 0, srcLength = 0;
-	char *temp = dest;
+	size_t dest_len = strlen(dest);
+	int i;
 
-	while (*(src + srcLength) != '\0')
-		srcLength++;
-	while (*dest)
-		dest++;
-	if (n > srcLength)
-		n = srcLength;
-	while (counter < n)
-	{
-		*dest++ = *src++;
-		counter++;
-	}
-	*dest = '\0';
-	return (temp);
+	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+	dest[dest_len + i] = src[i];
+	dest[dest_len + i] = '\0';
+	return (dest);
 }

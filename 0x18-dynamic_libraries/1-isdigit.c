@@ -1,13 +1,15 @@
+#include "main.h"
+
 /**
- * _isdigit - checks if int is digit or not
- *
- * @c: int c, represents a char
- *
- * Return: 1 if c is digit, 0 otherwise
+ * _isdigit - Checks for a digit (0 through 9)
+ * @c: Takes a character as input
+ * Return: 1 for digit, 0 otherwise
  */
+
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57) /* ascii 0..9 values */
+	if (c >= 48 && c <= 57)
 		return (1);
-	return (0);
+	else
+		return (0);
 }
